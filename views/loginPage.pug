@@ -1,0 +1,28 @@
+extends layout
+block content
+    div(class="container")
+        div(class="loginPage")
+            form(class="form-signin" method="post" action="authenticate")
+                #error
+                    if error
+                        p.text-danger Error!!!
+
+                h1(class="h1Classes") AUSC Lunch-For-4 Log In
+
+                input(class="inputText" type="email" name="email" id="inputEmail" class="form-control" placeholder="Email Address" required autofocus)
+
+                input(class="inputText" type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required)
+
+                input(class="signInButton" type="submit" name="Submit" id="Submit" value="Sign In")
+
+                button(class="signUpButton" type="button" name="SignUp" id="SignUp" value="Sign Up" onclick="location.href = '/newUser';") Sign Up
+
+                
+                p(class="pClasses" href='https://aurora.edu/index.html') Aurora University ©2020
+
+    div(class="alertBottom")
+    div(class="alertTop")
+
+
+
+    

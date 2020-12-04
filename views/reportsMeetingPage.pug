@@ -1,0 +1,16 @@
+extends layout
+block content
+    div(class="container")
+        div(class="reportsPage")
+                h1(class="h1Classes") AUSC Lunch-For-4 Reports Page
+                p(class="reportpClasses") Meetings Held: !{successfulMeetings}
+                p(class="reportpClasses") Meetings to be Held: !{pendingMeetings}
+                p(class="reportpClasses") Meetings Not Held: !{unsuccessfulMeetings}
+                | !{meetingTable}
+                button(class="reportButton" type="button" name="User" id="User" value="User" onclick="location.href = '/reportsUserPage';") Users
+                button(class="reportButton" type="button" name="Home" id="Home" value="Home" onclick="location.href = '/adminHomePage';") Home
+                p(class="pClasses" href='https://aurora.edu/index.html') Aurora University ©2020
+
+    div(class="alertBottom")
+    div(class="alertTop")
+

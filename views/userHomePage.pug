@@ -1,0 +1,73 @@
+doctype html
+head
+  link(rel='stylesheet', href='../stylesheets/Userstyle.css')
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(name='description' content='')
+  meta(name='author' content='')
+  title Aurora Lunch-For-4 
+  // Bootstrap core CSS
+  link(href='vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet')
+  // Custom styles for this template
+  link(href='css/simple-sidebar.css' rel='stylesheet')
+#wrapper.d-flex
+  // Sidebar
+  #sidebar-wrapper.bg-light.border-right
+    .sidebar-heading Lunch-For-4 
+    .list-group.list-group-flush
+      a.list-group-item.list-group-item-action.bg-light(href='/userHomePage') Home
+      a.list-group-item.list-group-item-action.bg-light(href='/userEditInfo') Edit Info
+      a.list-group-item.list-group-item-action.bg-light(href='/participationPage') Status
+      a.list-group-item.list-group-item-action.bg-light(href='/login') Log Out
+  // /#sidebar-wrapper
+  // Page Content
+  #page-content-wrapper
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.border-bottom
+      button#menu-toggle.btn.btn-primary Toggle Menu
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto.mt-2.mt-lg-0
+          li.nav-item.active
+            a.nav-link(href='/userHomePage')
+              | Home 
+              span.sr-only (current)
+          //li.nav-item
+            a.nav-link(href='#') Link
+
+          //We probably wont need this but leaving commented out for now -JK
+          //li.nav-item.dropdown
+            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+              | Dropdown
+            .dropdown-menu.dropdown-menu-right(aria-labelledby='navbarDropdown')
+              a.dropdown-item(href='#') Action
+              a.dropdown-item(href='#') Another action
+              .dropdown-divider
+              a.dropdown-item(href='#') Something else here
+    .container-fluid
+      h1.mt-4 Lunch For 4
+      h6
+        | Welcome to the Aurora University Social Committee's Lunch For 4 Application! This is the Users Home Page. Here you can:
+      h3 Editing your Info-
+      p  Has something changed? Do you want to change your email? last name? Click on the side tab "Edit Info" to change your first name, last name, department, or email. You email must still remain an Aurora University email.
+      h3 Check Participation Status-
+      p
+        | Click on the "status" tab in the left sidebar to check your participation status or change it. Participation status means that you have the option to be in an 'active' or 'suspended' state. By selecting 'active' you will be automatically assigned to meetings and notified of 
+        | details. If you are in the 'suspended' state, that means you have opted not to participate in meetings at the moment and will not be assigned to any. You can select your status by selecting the desired checkbox. The status page will also indicate if you have been selected as a leader for the next meeting.
+      h3 Log Out-
+      p The log out button is located on the left sidebar will securely log you out of the application and redirect you to the login page.
+      //img(src='/img/logo' alt='Aurora University Logo' style='width:100px; height:100px;')
+      h3 View Current Meetings-
+      p Below is the currently scheduled meetings:
+   
+  // /#page-content-wrapper
+// /#wrapper
+// Bootstrap core JavaScript
+script(src='vendor/jquery/jquery.min.js')
+script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
+// Menu Toggle Script
+script.
+  $("#menu-toggle").click(function(e) {
+  e.preventDefault();
+  $("#wrapper").toggleClass("toggled");
+  });

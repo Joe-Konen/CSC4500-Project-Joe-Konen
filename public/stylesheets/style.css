@@ -1,0 +1,116 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  color: white;
+  font-weight: 400;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-size: 1rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #00467F;
+}
+.signInButton
+{
+    height:35px;
+    width:375px;
+    margin: 10px;
+}
+.h1Classes
+{
+  text-align: center;
+
+}
+
+
+.deptselect
+{
+  text-align: center;
+
+}
+.pClasses
+{
+    text-align: center;
+}
+.loginPage
+{
+  margin: auto;
+  position: absolute;
+  top: 100%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.reportsPage
+{
+  margin: auto;
+  position: absolute;
+  left: -30%;
+  width: 575px;
+  padding: 25px;
+}
+.reportsUserPage
+{
+  margin: auto;
+  position: absolute;
+  left: -30%;
+  width: 575px;
+  padding: 25px;
+}
+.container 
+{
+    width: 375px;
+    height: 300px;
+    position: relative;
+}
+.error
+{
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+.signUpButton
+{
+  height:35px;
+  width:375px;
+  margin:10px;
+}
+.inputText
+{
+  height:35px;
+  width:375px;
+  margin:10px;
+}
+.alertTop
+{
+  color: #47AA42;
+  height: 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 27px solid #47AA42;
+  border-width: 25px;
+}
+
+.alertBottom
+{
+  color: #47AA42;
+  height: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-bottom: 27px solid #47AA42;
+  border-width: 25px;
+}
+.reportButton
+{
+  height:35px;
+  width:375px;
+  margin: 3px;
+  margin-left: 73px;
+}
+.reportpClasses
+{
+    text-align: left;
+    font-weight: bold;
+}

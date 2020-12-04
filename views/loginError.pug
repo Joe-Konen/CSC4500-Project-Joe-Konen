@@ -1,0 +1,20 @@
+extends layout
+block content
+    div(class="container")
+        div(class="loginPage")
+            form(class="form-signin" method="post" action="authenticate")
+                #error
+                    if error
+                        p.text-danger Error!!!
+
+                h1(class="h1Classes") Lunch For 4 Log In
+
+                input(class="inputText" type="email" name="email" id="inputEmail" class="form-control" placeholder="Email Address" required autofocus)
+
+                input(class="inputText" type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required)
+
+                input(class="signInButton" type="submit" name="Submit" id="Submit" value="Sign In")
+
+                p(class="error") Email and/or password is incorrect
+
+                p(class="pClasses") Aurora University ©2020

@@ -1,0 +1,11 @@
+users table should include:
+    aurora_id
+    first_name
+    last_name
+    email -> must be aurora.edu
+    password
+    particpant_status
+    department
+
+
+maybe remove birthdate from participants

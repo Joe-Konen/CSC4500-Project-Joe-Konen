@@ -1,0 +1,69 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(name='description' content='')
+  meta(name='author' content='')
+  title Lunch For 4
+  // Bootstrap core CSS
+  link(href='vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet')
+  // Custom styles for this template
+  link(href='css/simple-sidebar.css' rel='stylesheet')
+#wrapper.d-flex
+  // Sidebar
+  #sidebar-wrapper.bg-light.border-right
+    .sidebar-heading Lunch For 4 
+    .list-group.list-group-flush
+      a.list-group-item.list-group-item-action.bg-light(href='/adminHomePage') Home
+      a.list-group-item.list-group-item-action.bg-light(href='/adminEditUsers') Edit Users
+      a.list-group-item.list-group-item-action.bg-light(href='/reportsMeetingPage') Reports
+      a.list-group-item.list-group-item-action.bg-light(href='/login') Log Out
+  // /#sidebar-wrapper
+  // Page Content
+  #page-content-wrapper
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.border-bottom
+      button#menu-toggle.btn.btn-primary Toggle Menu
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto.mt-2.mt-lg-0
+          li.nav-item.active
+            a.nav-link(href='/adminHomePage')
+              | Home 
+              span.sr-only (current)
+          //li.nav-item
+            a.nav-link(href='https://aurora.edu/') Link
+          //li.nav-item.dropdown
+            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+              | Dropdown
+            .dropdown-menu.dropdown-menu-right(aria-labelledby='navbarDropdown')
+              a.dropdown-item(href='#') Action
+              a.dropdown-item(href='#') Another action
+              .dropdown-divider
+              a.dropdown-item(href='#') Something else here
+    .container-fluid
+      h1.mt-4 Lunch For 4
+      h6
+        | Welcome to the Aurora University Social Committee's Lunch For 4 Application! This is the Admins Home Page. Here you can:
+      h3 Editing Other Users-
+      p  Click on the side bar option "Editing Other Users" to change the information for each user. This allows you to change name, email, department, admin status, and participation status. This page also allows you to add new users or remove existing users. 
+      h3 Reports-
+      p  The reports page is available for you to enter in a recap and report of your meeting. This page is specifically for meeting leaders to submit a summary of the meeting, who attended, and how it went. 
+         
+      h3 Log Out-
+      p The log out button is located on the left sidebar will securely log you out of the application and redirect you to the login page.
+      h3 View Current Meetings-
+      p Below is the currently scheduled meetings:
+      //img(src='/img/logo' alt='Aurora University Logo' style='width:100px; height:100px;')
+   
+  // /#page-content-wrapper
+// /#wrapper
+// Bootstrap core JavaScript
+script(src='vendor/jquery/jquery.min.js')
+script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
+// Menu Toggle Script
+script.
+  $("#menu-toggle").click(function(e) {
+  e.preventDefault();
+  $("#wrapper").toggleClass("toggled");
+  });

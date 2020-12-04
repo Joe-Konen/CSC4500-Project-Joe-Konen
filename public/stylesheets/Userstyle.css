@@ -1,0 +1,14 @@
+html,
+body {
+  height: 100%;
+  color: #00467F ;
+}
+#page-content-wrapper
+{
+  background-color: #00467F ;
+  color: white;
+}
+.container-fluid
+{
+  text-emphasis-color: red;
+}

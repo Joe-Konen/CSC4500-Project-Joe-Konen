@@ -1,0 +1,40 @@
+extends layout
+block content
+    div(class="container")
+        div(class="loginPage")
+            form(class="form-signin" method="post" action="addUser")
+                #error
+                    if error
+                        p.text-danger Error!!!
+
+                h1(class="h1Classes") Sign Up For Lunch For 4
+
+                input(class="inputText" type="text" name="fName" id="fName" class="form-control" placeholder="First Name" required autofocus)
+
+                input(class="inputText" type="text" name="lName" id="lName" class="form-control" placeholder="Last Name" required)
+
+                input(class="inputText" type="text" name="AUID" id="AUID" class="form-control" placeholder="Aurora ID" required)
+
+                input(class="inputText" type="email" name="email" id="inputEmail" class="form-control" placeholder="Email Address" required)
+
+                input(class="inputText" type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required)
+
+                label(id='deptselect' for="departments") Choose Your Department:     
+                select(id="departments" name="departments")
+                    option(value="CS") Computer Science
+                    option(value="BN") Business
+                    option(value="HS") History
+                    option(value="LW") Law
+                    option(value="EN") English
+                    option(value="Staff") AU Staff
+
+                input(class="signInButton" type="submit" name="Submit" id="Submit" value="Submit")
+
+                input(class="signInButton" type="button" name="Cancel" id="Cancel" value="Cancel" onclick="location.href = '/login';")
+
+                p(class="pClasses") Aurora University ©2020
+    div(class="alertBottom")
+    div(class="alertTop")
+
+
+    
